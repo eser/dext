@@ -8,9 +8,7 @@
 
 # Intro
 
-✖️ **dext** is an ecosystem delivering practices, philosophy and portability 
-
-dext consists of a set of **component**s that are designed to be used together. These sub-components enable developers to abstract their codes for better portability between platforms. Encourages ones to write codes once in functional approach, then run on mainstream environments such as cli, bot platforms, cloud-function runtimes and web apis.
+Not ready yet.
 
 
 
@@ -23,7 +21,7 @@ Ensure that [Deno](https://deno.land/) 1.27 or higher is installed on your syste
 Install dext globally first, then create a new project:
 
 ```sh
-$ deno install -A -f https://dext.deno.dev
+$ deno run -A https://dext.deno.dev
 
 $ dext create my-project
 

@@ -40,10 +40,10 @@ repos:
       types_or: [javascript, jsx, ts, tsx, json, markdown]
       pass_filenames: false
       language: system
-    - id: deno-test
-      name: deno test
-      description: Run tests using Deno's built-in test runner.
-      entry: deno task test
-      types_or: [javascript, jsx, ts, tsx, json]
-      pass_filenames: false
-      language: system
+    # - id: deno-test
+    #   name: deno test
+    #   description: Run tests using Deno's built-in test runner.
+    #   entry: deno task test
+    #   types_or: [javascript, jsx, ts, tsx, json]
+    #   pass_filenames: false
+    #   language: system

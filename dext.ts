@@ -12,7 +12,7 @@ import metadata from "./src/metadata.json" assert { type: "json" };
 
 const upgradeCli = async (_args: string[], _options: ExecuteOptions) => {
   const p = Deno.run({
-    cmd: ["deno", "install", "-A", "-r", "-f", "https://deno.land/x/dext/dext.ts"],
+    cmd: ["deno", "install", "-A", "-r", "-f", "https://deno.land/x/dextfw/dext.ts"],
     stdout: "inherit",
     stderr: "inherit",
     stdin: "null",
