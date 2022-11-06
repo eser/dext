@@ -8,7 +8,7 @@ import {
   showVersion,
 } from "https://deno.land/x/hex/src/cli/mod.ts";
 import { create } from "https://deno.land/x/hex/src/generator/create.ts";
-import metadata from "./src/metadata.json" assert { type: "json" };
+import metadata from "https://deno.land/x/dextfw/src/metadata.json" assert { type: "json" };
 
 const upgradeCli = async (_args: string[], _options: ExecuteOptions) => {
   const p = Deno.run({
