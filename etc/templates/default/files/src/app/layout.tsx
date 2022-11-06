@@ -1,5 +1,6 @@
-import { BodyContents, HeadContents } from "@hex/web/page";
 import { type Language } from "@hex/i18n";
+
+import { BodyContents, HeadContents } from "@dext/web/page";
 
 interface LayoutProps {
   lang: Language;

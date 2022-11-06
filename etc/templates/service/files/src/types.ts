@@ -3,7 +3,7 @@ import {
   type Context,
   type Service,
   type ServiceOptions,
-} from "@hex/service/mod.ts";
+} from "@dext/service/mod.ts";
 
 // interface definitions
 interface AppOptions extends ServiceOptions {

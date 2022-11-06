@@ -1,4 +1,4 @@
-import { run } from "@hex/web/mod.ts";
+import { run } from "@dext/web/mod.ts";
 
 run({
   urls: {

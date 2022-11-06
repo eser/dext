@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/eserozvataf/dext">
-    <img alt="dext: a deno framework" src="./etc/logo.png" width="849" />
+    <img alt="dext: a deno framework" src="https://raw.githubusercontent.com/eserozvataf/dext/development/etc/logo.png" width="849" />
   </a>
 </p>
 

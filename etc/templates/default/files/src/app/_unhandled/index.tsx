@@ -1,5 +1,6 @@
-import { type Context, results } from "@hex/web/page";
 import { type Language } from "@hex/i18n";
+
+import { type Context, results } from "@dext/web/page";
 
 interface PageProps {
   lang: Language;

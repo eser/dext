@@ -1,9 +1,9 @@
-import { type Context, run } from "@hex/service/mod.ts";
 import { MongoDbConnection } from "@hex/data/adapters/mongodb.ts";
 
-import { addHeaderMiddleware } from "@hex/service/middlewares/add-header.ts";
-import { corsMiddleware } from "@hex/service/middlewares/cors.ts";
-import { jwtMiddleware } from "@hex/service/middlewares/jwt.ts";
+import { type Context, run } from "@dext/service/mod.ts";
+import { addHeaderMiddleware } from "@dext/service/middlewares/add-header.ts";
+import { corsMiddleware } from "@dext/service/middlewares/cors.ts";
+import { jwtMiddleware } from "@dext/service/middlewares/jwt.ts";
 
 import { homeAction } from "@app/actions/home.ts";
 import { mongoAction } from "@app/actions/mongo.ts";
