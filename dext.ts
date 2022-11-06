@@ -55,6 +55,7 @@ const dextCli = async () => {
       name: "upgrade",
       // shortcut: "u",
       description: "Upgrades dext cli to the latest version",
+      isDefault: true,
 
       run: (args: string[]) => upgradeCli(args, executeOptions),
     },
@@ -109,7 +110,6 @@ const dextCli = async () => {
       name: "help",
       shortcut: "h",
       description: "Display help information",
-      isDefault: true,
 
       run: () => showHelp(commands, metadata.version, executeOptions),
     },
