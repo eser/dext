@@ -1,0 +1,39 @@
+name: "CI"
+
+on:
+  push:
+    branches: [ development ]
+  pull_request:
+    branches: [ "**" ]
+  # schedule:
+  #   - cron: '18 21 * * 6'
+
+jobs:
+  tests:
+    name: Tests
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        deno-version: [ 1.27.0 ]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup Deno ${{ matrix.deno-version }}
+      uses: denoland/setup-deno@v1
+      with:
+        deno-version: ${{ matrix.deno-version }}
+
+    - name: Verify Formatting
+      run: deno fmt --check
+
+    - name: Run Linter
+      run: deno lint
+
+    - name: Module Loading Check
+      run: deno run --reload ./mod.ts
+
+    - name: Run tests
+      run: deno test --allow-none
