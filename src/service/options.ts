@@ -1,6 +1,6 @@
 import { log } from "./deps.ts";
 import { type ServiceOptions } from "./types.ts";
-import * as options from "../options/mod.ts";
+import * as options from "https://deno.land/x/hex/src/options/mod.ts";
 
 // public functions
 const createOptionsBuilder = async <TOptions extends ServiceOptions>() => {

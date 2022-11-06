@@ -1,4 +1,7 @@
-import { type ExecuteOptions, validateOptions } from "../cli/mod.ts";
+import {
+  type ExecuteOptions,
+  validateOptions,
+} from "https://deno.land/x/hex/src/cli/mod.ts";
 import metadata from "../metadata.json" assert { type: "json" };
 import { flags } from "./deps.ts";
 import { generate } from "./generate.ts";
@@ -7,8 +10,8 @@ const showHelp = (options: ExecuteOptions) => {
   let generateCommand, otherCommand;
 
   if (options.command !== undefined) {
-    generateCommand = `hex create`;
-    otherCommand = `hex create`;
+    generateCommand = `dext create`;
+    otherCommand = `dext create`;
   } else {
     generateCommand = `deno run -A ${options.moduleRelative}`; // --allow-read --allow-write --allow-net
     otherCommand = `deno run -A ${options.moduleRelative}`; // --allow-read

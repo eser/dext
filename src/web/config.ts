@@ -1,4 +1,4 @@
-import { deepMerge } from "../fp/deep-merge.ts";
+import { deepMerge } from "https://deno.land/x/hex/src/fp/deep-merge.ts";
 
 interface Config {
   react?: {

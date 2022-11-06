@@ -1,5 +1,5 @@
-import * as di from "../di/mod.ts";
-import * as options from "../options/mod.ts";
+import * as di from "https://deno.land/x/hex/src/di/mod.ts";
+import * as options from "https://deno.land/x/hex/src/options/mod.ts";
 import { log, oak } from "./deps.ts";
 
 type State = oak.State;
